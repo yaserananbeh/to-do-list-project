@@ -1,0 +1,117 @@
+html{
+    background-color: rgb(133, 133, 133);
+    padding-top: 10vh;
+}
+body{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 20px 20px #6e6e6e;
+    height: auto;
+    background-color: rgb(27, 27, 27);
+    color: rgb(224, 223, 223);
+    padding-top: 20px;
+    margin: 50px auto;
+}
+header{
+    font-size: 3rem;
+    font-weight: 900;
+    width: 100%;
+    /* padding: 15px; */
+
+}
+main{
+    width: 100%;
+    /* max-height: 90%; */
+}
+form{
+    width: 100%;
+    margin: 20px auto;
+    height: 40px;
+}
+
+input[type="text"] {
+    width: 60%;
+    text-align: center;
+    height: 100%;
+    font-size: 1rem;
+}
+.viewContainer h2.title{
+    /* background-color: rebeccapurple;  */
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px;
+}
+.viewContainer{
+    margin: 10px auto;
+}
+.taskContainer{
+    max-height: 50%;
+    text-align: left;
+}
+.oneTask{
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid rgb(87, 87, 87);
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+.oneTask:hover{
+    transform: scale(1.05);
+    /* background-color: whitesmoke;
+    color: black; */
+    transition: all 0.4s ease-in-out 0s;
+    cursor: pointer;
+}
+.oneTask h4{
+    display: inline-block;
+    width: 80%;
+    margin: 0;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+    padding: 5px;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    /* border: 2px solid #4CAF50; */
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .button3 {
+    background-color: rgb(182, 178, 178); 
+    color: black; 
+    /* border: 2px solid #f44336; */
+  }
+  
+  .button3:hover {
+    background-color: #f44336;
+    color: white;
+  }
+footer{
+    /* height: 20%; */
+    text-align: left;
+    font-size: larger;
+    padding: 5px;
+    background-color: rgb(141, 141, 141);
+    margin-top: 50px;
+}
