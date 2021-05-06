@@ -107,6 +107,10 @@ input[type="text"] {
     background-color: #f44336;
     color: white;
   }
+  #clearAllData{
+      display: none;
+      margin: auto;
+  }
 footer{
     /* height: 20%; */
     text-align: left;
