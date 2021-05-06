@@ -15,14 +15,14 @@
     </header>
     <main>
         <div class="mainContainer">
-            <form action="">
-                <input type="text" placeholder="Type New Task">
+            <form id="form">
+                <input type="text" placeholder="Type New Task" id="taskInfo" required>
                 <input type="submit" value="ADD" class="button button1">
             </form>
             <div class="viewContainer">
                 <h2 class="title">Your Upcomming Tasks</h2>
-                <div class="taskContainer">
-                    <div class="oneTask">
+                <div class="taskContainer" id="taskContainer">
+                    <!-- <div class="oneTask">
                         <h4>TaskInfo</h4>
                         <button class="button button3">X</button>
                     </div>
@@ -49,9 +49,10 @@
                     <div class="oneTask">
                         <h4>TaskInfo</h4>
                         <button class="button button3">X</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
+            <button id='clearAllData' class="button button3">Clear The List</button>
         </div>
 
     </main>
