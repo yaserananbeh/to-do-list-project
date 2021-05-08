@@ -41,6 +41,7 @@ function handleUserData(e){
   h4El.textContent=newTask.name;
   let btn=document.createElement('button');
   btn.setAttribute('class','button button3');
+  btn.setAttribute('id','xBtn');
   btn.textContent='X';
   div.append(btn);
 
@@ -49,7 +50,15 @@ function handleUserData(e){
   form.reset();
 }
 function deleteElement(e){
-  // console.log(e.target.parentElement);
+  // console.log(e.target.parentElement.children[0].textContent);
+  let localData=JSON.parse(localStorage.getItem('task'));
+  let index = localData.map(function(e) { return e.name; }).indexOf(e.target.parentElement.children[0].textContent);
+  // console.log(index);
+  localData.splice(index,1);
+  // console.log(newLocaleData);
+  // console.log(localData);
+  localStorage.setItem('task',JSON.stringify(localData));
+
   e.target.parentElement.remove();
 }
 
@@ -66,9 +75,10 @@ function getStorageData(){
       h4El.textContent=storageData[i].name;
       let btn=document.createElement('button');
       btn.setAttribute('class','button button3');
+      btn.setAttribute('id','xBtn');
       btn.textContent='X';
       div.append(btn);
-
+      btn.addEventListener('click',deleteElement);
     }
   }
 }
